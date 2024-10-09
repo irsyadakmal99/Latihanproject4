@@ -1,0 +1,99 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: red;
+}
+
+nav {
+    display: flex;
+    margin-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 0px;
+    color: white;
+    transition: all;
+    transition: 200ms;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.07);
+}
+
+nav ul li a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+.container-film {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0px;
+    padding: 10px 20px;
+}
+
+.container-film .item {
+    overflow-x: auto;
+    border: 1px solid black;
+}
+
+span {
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.horizontal-scroll {
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.list-film {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.list-film img {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media  screen and (max-widht: 768px) {
+    nav ul{
+       flex-direction: column-reverse;
+    }
+}
